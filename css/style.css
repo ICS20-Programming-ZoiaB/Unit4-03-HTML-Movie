@@ -1,0 +1,23 @@
+/* Created by: ZoiaB
+* Created on: Apr 2023
+* This CSS file defines the style for index.html
+* ICS2O-Unit4-03-HTML-Movie
+*/
+
+body {
+  color: #c88484;
+  background-color: #bde5db;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  color: #68926f;
+  background-color: #debcf5;
+}
+
+h3 {
+  color: #b38fcc;
+}
