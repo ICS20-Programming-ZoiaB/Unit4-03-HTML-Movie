@@ -22,14 +22,19 @@ function ageSent() {
    message = "You are old enough to see an R-rated movie by yourself, without a parent or guardian.";
  }
 
- //otherwise, if age is greater than or equal to 13
+ //elseif, if age is greater than or equal to 13
  else if (age >= SECOND_LIMIT) {
    message = "You can watch a PG-13 movie by yourself, without a parent or guardian.";
  }
 
- //otherwise, if age is greater than or equal to 5
+ //elseif, if age is greater than or equal to 5
  else if (age >= THIRD_LIMIT) {
    message = "You can see a G or PG movie by yourself, without a parent or guardian.";
+ }
+
+ //elseif, if age is greater than or equal to 5
+ else if (age == "") {
+   message = "Please enter age.";
  }
 
  //else (any age under 5)
@@ -39,5 +44,4 @@ function ageSent() {
 
  //display results
   document.getElementById("results").innerHTML = message;
-  document.getElementById("results").innerHTML = "Thank you for inputting your age.";
 }
