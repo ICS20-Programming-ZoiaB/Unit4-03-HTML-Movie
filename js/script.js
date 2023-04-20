@@ -12,41 +12,41 @@ function ageSent() {
  let age = parseInt(document.getElementById("user-age").value);
  let message = "";
 
- //Setting constants: first age threshold is 17, second is 13, third is 5
+ //constants: first age threshold is 17, second is 13, third is 5
  const FIRST_LIMIT = 17;
  const SECOND_LIMIT = 13;
  const THIRD_LIMIT = 5;
   
- //first if statement: if user age is greater than or equal to 17 years old
+ //if: if user enters 0 or a negative number, say they must enter a valid age
  if (age <= 0) {
-   message = "Please enter a valid age";
+   message = "Please enter a valid age.";
  }
 
- //elseif, if user age is greater than or equal to 17 years old
+ //elseif: if user is 17 or older, tell them they can watch R-rated movies
  else if (age >= FIRST_LIMIT) {
    message = "You are old enough to see an R-rated movie by yourself, without a parent or guardian.";
  }
 
- //elseif, if age is greater than or equal to 13
+ //elseif: if user is 13 or older, tell them they can watch PG-13 movies
  else if (age >= SECOND_LIMIT) {
    message = "You can watch a PG-13 movie by yourself, without a parent or guardian.";
  }
 
- //elseif, if age is greater than or equal to 5
+ //elseif: if user is 5 or older, tell them they can watch G and PG movies
  else if (age >= THIRD_LIMIT) {
    message = "You can see a G or PG movie by yourself, without a parent or guardian.";
  }
 
-//else (any age under 5)
+//else: if user is under 5, tell them they need supervision
   else if (age <5) {
    message = "You should be supervised by a parent or guardian while watching any movie.";
  }
 
-  //else (if age is not entered)
+  //else: otherwise, tell them to enter age
   else {
     message = "Please enter age.";
   }
 
  //display results
-  document.getElementById("results").innerHTML = message;
+  document.getElementById("results").innerHTML = message + " Thank you for verifying your age!";
 }
