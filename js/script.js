@@ -50,11 +50,11 @@ function AgeSent() {
     message = "Please enter age.";
   }
     
-  //else (any age less than 5)
+  //else: otherwise (any age less than 5), tell them they need supervision
   else {
     message = "You should be supervised by a parent or guardian while watching any movie.";
   }
   
-  // Display the results to the user in the "results" div
+  // Display the rating to the user in the "results" div
   document.getElementById("results").innerHTML = message + " Thank you for verifying your age!";
 }
