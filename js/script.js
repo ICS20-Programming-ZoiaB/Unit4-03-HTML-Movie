@@ -19,7 +19,7 @@ function AgeSent() {
   const SECOND_THRESHOLD = 13;
   const THIRD_THRESHOLD = 5;
 
-  // Define message that will bes displayed as result later on
+  // Define message that will be displayed as result later on
   let message = "";
   
   // Get the user's age from input form
