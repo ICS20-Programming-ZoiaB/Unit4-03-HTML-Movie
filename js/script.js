@@ -12,7 +12,7 @@ function isEmpty(str) {
 }
 
 // This function determines which movie rating the user can go and see alone based on their age
-function ageSent() {
+function AgeSent() {
 
   // Setting constants: first age threshold is 17, second is 13, third is 5
   const FIRST_THRESHOLD = 17;
